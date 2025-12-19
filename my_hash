@@ -1,0 +1,10 @@
+def my_hash(text):
+    # sums ascii letters numbers
+    total_sum = sum(ord(char) for char in text)
+
+    # get a single digit 
+    return total_sum % 10
+
+print(f"Hash of 'hello': {my_hash('hello')}")
+print(f"Hash of 'different': {my_hash('different')}")
+print(f"Hash of 'same': {my_hash('same')}")
